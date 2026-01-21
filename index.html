@@ -847,43 +847,73 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <div class="section-title">
-                <h2 class="lang-zh">项目经历</h2>
-                <h2 class="lang-en">Project Experience</h2>
-                <p class="lang-zh">我参与的重要项目和成果</p>
-                <p class="lang-en">Important projects and achievements I've participated in</p>
+    
+<!-- Projects Section -->
+<section id="projects">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="lang-zh">项目经历</h2>
+            <h2 class="lang-en">Project Experience</h2>
+            <p class="lang-zh">我参与的重要项目和成果</p>
+            <p class="lang-en">Important projects and achievements I've participated in</p>
+        </div>
+        <div class="projects-grid">
+            <!-- 新增项目：PiERN架构CFD与扩散吸附科学计算语言融合系统 -->
+            <div class="project-card">
+                <div class="project-img" style="background-color: #9b59b6;"></div>
+                <div class="project-content">
+                    <h3 class="lang-zh">基于PiERN架构的CFD与扩散吸附科学计算语言融合系统</h3>
+                    <h3 class="lang-en">CFD and Diffusion-Adsorption Scientific Computing-Language Fusion System Based on PiERN Architecture</h3>
+                    <span class="date lang-zh">2025年1月 - 2025年3月</span>
+                    <span class="date lang-en">January 2025 - March 2025</span>
+                    <p class="lang-zh"><strong>课程:</strong> 机器学习基础</p>
+                    <p class="lang-en"><strong>Course:</strong> Fundamentals of Machine Learning</p>
+                    <ul class="lang-zh">
+                        <li>基于PiERN（物理隔离专家路由网络）架构，协作开发融合高精度科学计算与语言推理的混合模型，主导专家模型验证和数据集构建核心工作</li>
+                        <li>复现并验证PDEBench中1D-CFD扩散吸附任务的官方专家模型（FNO、U-Net、PINN），确保其在PiERN框架内独立高效运行</li>
+                        <li>为每个任务设计超100种多样化语言模板（涵盖基础查询、数值修正、条件假设），构建高质量文本到计算模块的训练数据集</li>
+                        <li>为Token Router训练数据集创建50条表达性语句，实现语言推理与科学计算间的动态路由，支持任务自适应调度</li>
+                        <li>在目标任务中实现语言引导的高精度问题求解和可解释推理，验证了PiERN架构在跨物理场景下的有效性和泛化能力</li>
+                        <li>交付完整代码、数据集和实验报告，在期末答辩中展示成果，验证了模型的协同推理性能和计算精度</li>
+                    </ul>
+                    <ul class="lang-en">
+                        <li>Collaboratively developed a hybrid model integrating high-precision scientific computing and language reasoning based on the PiERN (Physically-isolated Experts Routing Network) architecture, leading core work in expert model validation and dataset construction</li>
+                        <li>Reproduced and verified official expert models (FNO, U-Net, PINN) for 1D-CFD diffusion-adsorption tasks from PDEBench to ensure independent and efficient operation within the PiERN framework</li>
+                        <li>Designed over 100 diverse language templates per task (covering basic queries, numerical corrections, conditional hypotheses) to build a high-quality training dataset for the text-to-computation module</li>
+                        <li>Created 50 expressive statements for the Token Router training dataset, enabling dynamic routing between language reasoning and scientific computing for task-adaptive scheduling</li>
+                        <li>Achieved language-guided high-precision problem-solving and interpretable reasoning in target tasks, verifying PiERN's effectiveness and generalization across cross-physical scenarios</li>
+                        <li>Delivered complete code, datasets, and experimental reports; presented results in final defense with demonstrated collaborative reasoning performance and computational accuracy</li>
+                    </ul>
+                </div>
             </div>
-            <div class="projects-grid">
-                <!-- 新增的项目: 多智能体协作的高考复习系统 -->
-                <div class="project-card">
-                    <div class="project-img" style="background-color: #3498db;"></div>
-                    <div class="project-content">
-                        <h3 class="lang-zh">多智能体协作的高考复习系统</h3>
-                        <h3 class="lang-en">National College Entrance Examination Review System with Multi-Agent Collaboration</h3>
-                        <span class="date lang-zh">2025年3月 - 2025年6月</span>
-                        <span class="date lang-en">March 2025 - June 2025</span>
-                        <p class="lang-zh"><strong>导师:</strong> 袁坤教授</p>
-                        <p class="lang-en"><strong>Supervisor:</strong> Professor Kun Yuan</p>
-                        <ul class="lang-zh">
-                            <li>设计并实现了一种新颖的多智能体系统，用于高考复习，利用三个专门的LLM智能体，具有不同的角色：学习者、教师和助教</li>
-                            <li>使用Tkinter开发了一个全面的GUI界面，支持API配置、科目选择、文档上传和实时对话显示</li>
-                            <li>设计了PDF和DOCX格式的文档解析功能</li>
-                            <li>实现了一个结构化的对话工作流程，学习者智能体根据上传的材料提出问题，教师智能体提供解释，助教智能体生成总结性的学习图表</li>
-                        </ul>
-                        <ul class="lang-en">
-                            <li>Designed and implemented a novel multi-agent system for college entrance examination review, utilizing three specialized LLM agents with distinct roles: learner, teacher, and teaching assistant</li>
-                            <li>Developed a comprehensive GUI interface using Tkinter, supporting API configuration, subject selection, document upload, and real-time dialogue display</li>
-                            <li>Designed document parsing functionality for PDF and DOCX formats</li>
-                            <li>Implemented a structured dialogue workflow where the learner agent asks questions based on uploaded materials, the teacher agent provides explanations, and the teaching assistant agent generates summary learning charts</li>
-                        </ul>
-                    </div>
+
+            <!-- 原有项目：多智能体协作的高考复习系统 -->
+            <div class="project-card">
+                <div class="project-img" style="background-color: #3498db;"></div>
+                <div class="project-content">
+                    <h3 class="lang-zh">多智能体协作的高考复习系统</h3>
+                    <h3 class="lang-en">National College Entrance Examination Review System with Multi-Agent Collaboration</h3>
+                    <span class="date lang-zh">2025年3月 - 2025年6月</span>
+                    <span class="date lang-en">March 2025 - June 2025</span>
+                    <p class="lang-zh"><strong>导师:</strong> 袁坤教授</p>
+                    <p class="lang-en"><strong>Supervisor:</strong> Professor Kun Yuan</p>
+                    <ul class="lang-zh">
+                        <li>设计并实现了一种新颖的多智能体系统，用于高考复习，利用三个专门的LLM智能体，具有不同的角色：学习者、教师和助教</li>
+                        <li>使用Tkinter开发了一个全面的GUI界面，支持API配置、科目选择、文档上传和实时对话显示</li>
+                        <li>设计了PDF和DOCX格式的文档解析功能</li>
+                        <li>实现了一个结构化的对话工作流程，学习者智能体根据上传的材料提出问题，教师智能体提供解释，助教智能体生成总结性的学习图表</li>
+                    </ul>
+                    <ul class="lang-en">
+                        <li>Designed and implemented a novel multi-agent system for college entrance examination review, utilizing three specialized LLM agents with distinct roles: learner, teacher, and teaching assistant</li>
+                        <li>Developed a comprehensive GUI interface using Tkinter, supporting API configuration, subject selection, document upload, and real-time dialogue display</li>
+                        <li>Designed document parsing functionality for PDF and DOCX formats</li>
+                        <li>Implemented a structured dialogue workflow where the learner agent asks questions based on uploaded materials, the teacher agent provides explanations, and the teaching assistant agent generates summary learning charts</li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Extracurricular Section (占位) -->
     <section id="extra-curricular">
